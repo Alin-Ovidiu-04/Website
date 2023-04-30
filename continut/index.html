@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="ro">
+
+<head>
+      <title>Acasa</title>
+      <link rel="shortcut icon" href="./favicon.ico">
+      <script src="js/script.js"></script>
+      <script src="js/persoane.js"></script>
+      <script src="js/cumparaturi.js"></script>
+      <link rel="stylesheet" href="./css/stil.css">
+</head>
+
+
+<body onload="schimbaContinut('acasa')">
+	
+	<nav>		
+            <a onclick="schimbaContinut('acasa')"><b>Acasă</b></a>
+            <a onclick="schimbaContinut('inregistreaza')"><b>Înregistrează</b></a>
+            <a onclick="schimbaContinut('video')"><b>Video</b></a>
+            <a onclick="schimbaContinut('invat')"><b>Învăț</b></a>
+	        <a onclick="schimbaContinut('despre')"><b>Despre</b></a>
+            <a onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')"><b>Persoane</b></a>
+            <a onclick="schimbaContinut('cumparaturi')"><b>Cumparături</b></a>
+    
+	</nav>
+
+    <main id = "continut"></main>
+
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+
+body {
+    background-color: rgb(61, 58, 57);
+    color: white;
+}
+
+
+table, th, td {
+    border:1px solid black;
+}
+
+fieldset {
+    border: 2px solid rgb(73, 14, 174);
+    border-radius: 5px;
+}
+
+
+.tab { 
+    display: inline-block; 
+    margin-left: 10px;
+}
+
+
+h1 {
+    float:left; 
+    margin-left:400px; 
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+a:link {
+    color: #0c0c9d;
+	text-decoration: none;
+	font-family: "Verdana";
+	font-size: 120%;
+}
+
+p a:visited {
+    display: block;
+    color: #9d1d0c;
+    padding: 8px;
+	text-decoration: none;
+	font-size: 120%;
+}
+
+nav a {
+    display: block;
+    float: left;
+    padding: 8px;
+    background-color: #000000;
+    color: #0dbd1f;
+}
+
+#af{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#al{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer::first-letter{
+    color: #e91212;
+}
+
+input[type=text],input[type=email],input[type=tel] {
+    width: 100px;
+    padding: 5px 5px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(131, 240, 228), rgb(231, 236, 234));
+
+    border: 2px solid rgb(20, 195, 35);
+    border-radius: 10px;
+}
+
+input[list=mancare],input[type=url] {
+    width: 95px;
+    padding: 3px 3px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(91, 126, 243), rgb(20, 171, 110));
+
+    border: 2px solid rgb(228, 244, 14);
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #0fdede;
+}
+  
+#v1{
+    flex-basis:480px;
+    width: 1250px;
+    margin-top: 25px;
+    margin-left: 110px;
+    display: block;
+    padding: 15px;
+}
+
+#v2{
+    flex-basis:280px;
+    width: 1250px;
+    margin:auto;
+    display: block;
+    padding: 15px;
+}
+
+#v3{
+    flex-basis:480px;
+    width: 1250px;
+    margin:auto;
+    display: block;
+    padding: 15px;
+}
+
+#v4{
+    flex-basis:280px;
+    width: 1250px;
+    margin-bottom: 25px;
+    margin-left: 110px;
+    margin:auto;
+    display: block;
+    padding: 15px;
+}
+
+div p b{
+    color: #4848fd;
+    font-variant: inherit;
+}
+
+div img{
+    width:1000px; 
+    height:250px;
+    margin-left:280px;
+    margin-top:50px;
+}
+		
+div.bor_black {
+	border:135px solid black;
+    margin-top: -50px;
+}
+
+div.bor_black p{
+    margin-left:-630px;
+}
+
+div.bor_black form{
+    margin-top: 80px;
+    margin-left:-630px;
+}
+
+div.bor_blue {
+    float:left;
+	border:2px solid rgb(53, 9, 195);
+    margin-left:660px;
+    margin-top: -70px;
+}
+
+div.bor_blue iframe{
+    width:770px; 
+    height:330px;
+    margin-left:5px;
+    margin-top:0px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(44, 118, 79);
+      color: white;
+    }
+
+    h1 {
+        float:left; 
+        margin-left:100px; 
+        margin-top: 10px;
+        color: #ffffff;
+    }
+
+    nav a{
+        float: none;
+        width: 100%;
+        padding: 5px;
+        background-color: #2b2f2f;
+        color: #ffffff;
+    }
+    
+    div img{
+        width:415px; 
+        height:150px;
+        position: relative;
+        margin-left:30px;
+        margin-top:0px;
+    }
+
+    #v1{
+        flex-basis:240px;
+        width: 320px;
+        margin: auto;
+        display: block;
+        padding: 15px;
+    }
+
+    #v2{
+        flex-basis:240px;
+        width: 320px;
+        margin: auto;
+        display: block;
+        padding: 15px;
+    }
+
+    #v3{
+        flex-basis:240px;
+        width: 320px;
+        margin: auto;
+        display: block;
+        padding: 15px;
+    }
+
+    #v4{
+        flex-basis:240px;
+        width: 320px;
+        margin: auto;
+        display: block;
+        padding: 15px;
+    }
+
+    div.bor_black {
+    border:100px solid black;
+    margin-top: -20px;
+    }
+
+    div.bor_black p{
+        margin-left:-75px;
+    }
+
+    div.bor_black form{
+        margin-top: 80px;
+        margin-left: -75px;
+    }
+
+    div.bor_blue {
+        float:left;
+        border:2px solid rgb(53, 9, 195);
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    div.bor_blue iframe{
+        width:270px; 
+        height:330px;
+        margin-left:0px;
+        margin-top:20px;
+    }
+
+
+    #af{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    
+    #al{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    canvas{
+        width:300px;
+        height:200px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="ro">
+
+<head>
+    <title>Despre</title>
+    <link rel="shortcut icon" href="./img/earth.png" >
+	<link rel="stylesheet" href="./css/stil.css">
+</head>
+
+
+<body>
+	
+	<main>
+  
+    <br><br><br>
+    <h1>Poftiți și cumpărați!</h1>
+
+    <br><br><br>
+    <p>Modul de stocare:</p>
+    <form>
+      <label>
+        <input type="radio" name="optiune" value="DataBase" /> Stocare în baza de date
+      </label>
+
+      <label>
+        <input type="radio" name="optiune" value="LocalStorage" checked /> Stocare în browser
+      </label>
+    </form>
+
+    <br><br>
+
+    <form id="produse">
+      <div>
+        <div>
+          <label>Nume produs:</label><br><br>
+          <input type="text" id="nume" />
+        </div>
+
+        <div>
+          <br><label>Cantitate:</label><br><br>
+          <input type="number" id="cantitate" />
+        </div>
+
+        <div>
+          <br><br>
+          <input type="button" value="Adaugă" onclick="cumpara()" /><br /><br />
+        </div>
+      </div>
+    </form>
+
+    <br><br>
+    <p>Lista de cumpărături stocată în baza de date: </p>
+    <table id="DataBaseTable"></table>
+    <p>Lista de cumpărături stocată în local storage: </p>
+    <table id="LocalTable"></table>
+    
+  </main>
+
+</body>
+
+</html>

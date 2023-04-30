@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="ro">
+
+<head>
+    <title>Învăț</title>
+    <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="./img/earth.png" >
+	<link rel="stylesheet" href="./css/stil.css">
+</head>
+
+
+<body onload="browser()">
+	
+	<main >
+
+    <aside>
+        <br><br>
+        <p><a href="#S1">Sari la Secțiunea 1</a></p>
+        <p><a href="#S2">Sari la Secțiunea 2</a></p>
+        <p><a href="#S3">Sari la Secțiunea 3</a></p>
+
+    </aside>
+
+    <section id="S1">
+        <br>
+        <h2>Secțiunea 1</h2>
+
+        <p id = "date"></p>
+        <p id = "hour"></p>
+        <p id = "url"></p>
+        <p id = "location"></p>
+        <p id = "bName"></p>
+        <p id = "bVersion"></p>
+        <p id = "SO"></p>
+    </section>
+
+    <section id="S2">
+        <h2>Secțiunea 2</h2>
+
+        <label for = "colorIn">Selectați culoarea de umplere:</label>
+        <input id = "colorIn" type = "color">
+        <br><br>
+        <label for = "colorOut">Selectați culoarea marginii:</label>
+        <input id = "colorOut" type = "color">
+        <br><br><br>
+        <canvas id="Canvas" width="1000" height="600" style=" border: 1px solid rgb(202, 15, 15)"></canvas>
+    </section>
+
+    <section id="S3">
+        <h2>Secțiunea 3</h2>
+
+        <label for="poz">Poziție: </label>
+        <input type="text" id="poz" name="poz">
+        <label for="culoare">Alegeți culoarea pentru coloană/rând:</label>
+        <input type="color" id="culoare" onclick="schimbaCuloare_coloana()" >
+
+        <br><br><br>
+
+        <table id="tabel">
+            <tr>
+                <td>A</td>
+                <td>A</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>A</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>A</td>
+                <td>A</td>
+            </tr>       
+        </table>
+
+        <br><br>
+
+        <button onclick="inserareColoana()">Coloană nouă</button>
+        <br><br>
+        <button onclick="inserareRand()">Rând nou</button>
+           
+    </section>
+
+
+    <footer style="float:left; margin-left:0px; margin-top:55px;">
+		&#169;MorosanuAlinOvidiu_CeleSapteMinuniAleLumii
+	</footer>
+
+    </main>
+</body>				
+</html>

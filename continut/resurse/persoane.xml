@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE  persoane [
+   <!ELEMENT persoane (persoana*)>
+   <!ATTLIST persoana id CDATA  #REQUIRED>
+   <!ELEMENT persoana (nume,prenume,varsta,adresa,cv)>
+   <!ELEMENT nume (#PCDATA)>
+   <!ELEMENT prenume (#PCDATA)>
+   <!ELEMENT varsta (#PCDATA)>
+   <!ELEMENT adresa (strada,numar,localitate,judet,tara)>
+   <!ELEMENT strada (#PCDATA)>
+   <!ELEMENT numar (#PCDATA)>
+   <!ELEMENT localitate (#PCDATA)>
+   <!ELEMENT judet (#PCDATA)>
+   <!ELEMENT tara (#PCDATA)>
+   <!ELEMENT cv (liceu,facultate)>
+   <!ELEMENT liceu (#PCDATA)>
+   <!ELEMENT facultate (#PCDATA)>
+   ]>
+
+<persoane>
+ <persoana id="1">
+ <nume>Popescu</nume>
+ <prenume>Ion</prenume>
+ <varsta>23</varsta>
+ <adresa>
+    <strada>Alba</strada>
+    <numar>14</numar>
+    <localitate>Iași</localitate>
+    <judet>Iași</judet>
+    <tara>România</tara>
+ </adresa>
+ <cv>
+   <liceu>Mihai Eminescu , Botoșani</liceu>
+   <facultate>Universitatea Tehnică Gheorghe Asachi, Iași</facultate>
+ </cv>
+ </persoana>
+
+  <persoana id="2">
+ <nume>Turic</nume>
+ <prenume>Maria</prenume>
+ <varsta>21</varsta>
+ <adresa>
+    <strada>Ștefan cel Mare</strada>
+    <numar>10</numar>
+    <localitate>Iași</localitate>
+    <judet>Iași</judet>
+    <tara>România</tara>
+ </adresa>
+ <cv>
+   <liceu>Costache Negruzzi , Iasi</liceu>
+   <facultate>Universitatea Tehnică Gheorghe Asachi, Iași</facultate>
+ </cv>
+ </persoana>
+
+  <persoana id="3">
+ <nume>Mitică</nume>
+ <prenume>Delia</prenume>
+ <varsta>24</varsta>
+ <adresa>
+    <strada>Rozelor</strada>
+    <numar>17</numar>
+    <localitate>Iași</localitate>
+    <judet>Iași</judet>
+    <tara>România</tara>
+ </adresa>
+ <cv>
+   <liceu>Emil Racoviță, Iași</liceu>
+   <facultate>Universitatea Tehnică Gheorghe Asachi, Iași</facultate>
+ </cv>
+ </persoana>
+
+  <persoana id="4">
+ <nume>Florescu</nume>
+ <prenume>Mircea</prenume>
+ <varsta>22</varsta>
+ <adresa>
+    <strada>Canta</strada>
+    <numar>20</numar>
+    <localitate>Iași</localitate>
+    <judet>Iași</judet>
+    <tara>România</tara>
+ </adresa>
+ <cv>
+   <liceu>Laurian, Botoșani</liceu>
+   <facultate>Universitatea Tehnică Gheorghe Asachi, Iași</facultate>
+ </cv>
+ </persoana>
+</persoane>
